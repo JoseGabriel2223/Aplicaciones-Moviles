@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <EditText
+        android:id="@+id/edConfirmar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confimar Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <EditText
+        android:id="@+id/edContraseña"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edConfirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <EditText
+        android:id="@+id/edCorreo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo Electronico"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <EditText
+        android:id="@+id/edNombre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:backgroundTint="#206A0C"
+        android:onClick="Registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edConfirmar"
+        app:layout_constraintVertical_bias="0.166" />
+</androidx.constraintlayout.widget.ConstraintLayout>

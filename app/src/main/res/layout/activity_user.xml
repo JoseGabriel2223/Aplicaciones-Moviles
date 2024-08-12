@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_activity">
+
+
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:text="TextView"
+
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="TextView"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvusuario" />
+
+    <TextView
+        android:id="@+id/tvusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:text="TextView"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="246dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:text="Cerrar Sesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvemail"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvusuario"
+        app:srcCompat="@drawable/email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

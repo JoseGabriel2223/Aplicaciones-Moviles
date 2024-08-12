@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/teal_700">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSubjectName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la Materia"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/ivIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvTeacherName"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tvTeacherName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Profesor: Nombre del Profesor"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvSubjectName"
+            app:layout_constraintEnd_toEndOf="@+id/tvSubjectName"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubjectName"
+            app:layout_constraintBottom_toTopOf="@+id/progressBar" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progress="50"
+            app:layout_constraintStart_toStartOf="@+id/tvTeacherName"
+            app:layout_constraintEnd_toEndOf="@+id/tvTeacherName"
+            app:layout_constraintTop_toBottomOf="@+id/tvTeacherName" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:backgroundTint="@android:color/holo_blue_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_weight="1" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:backgroundTint="@android:color/holo_red_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:layout_constraintStart_toEndOf="@+id/btnEdit"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_weight="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
